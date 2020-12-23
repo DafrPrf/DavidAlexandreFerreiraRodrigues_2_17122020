@@ -1,0 +1,55 @@
+* {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+p {
+    font-size: 12px;
+}
+
+/* --- WRAPPER --- */
+
+#wrapper {
+    margin: 0 50px 0 50px;
+}
+
+
+/* --- HEADER --- */
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo { 
+    width: 96px;
+    height: 30px;
+    background-image: url(../images/logo/Reservia.svg);
+    background-size: 96px 30px;
+}
+
+#header_nav {
+    width: 30%;
+    margin-right: 29px;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* --- BODY --- */
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+
+/* --- FOOTER --- */
+
+footer {
+    background-color: grey;
+}
