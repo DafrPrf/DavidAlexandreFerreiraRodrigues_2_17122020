@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Reservia</title>
 </head>
@@ -13,18 +13,20 @@
     <div  id="wrapper">
         <!-- header -->
         <header>
-            <div id="logo"></div>
-
+            <div id="container_logo">
+                <img src="images/logo/Reservia.svg" alt="reservia logo">
+            </div>
+                
             <nav id="header_nav">
                 <ul>
                     <li>
-                        <a href="#lodge_results">Hébergements</a>
+                        <a class="mouse_hover" href="#lodge_results">Hébergements</a>
                     </li>
                     <li>
-                        <a href="#activities">Activités</a>
+                        <a class="mouse_hover" href="#activities">Activités</a>
                     </li>
                     <li>
-                        <a href="#">S'inscrire</a>
+                        <a id="bold_blue"   href="#">S'inscrire</a>
                     </li>
                 </ul>
             </nav>
@@ -32,41 +34,61 @@
 
         <!-- section 1 filtres -->
         <section id="filters_section">
-            <div>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-            </div>
+            
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            
 
             <div id="search_bar">
-                <img src="" alt="">
-                <input type="text">
+                <div id="container_map_point">
+                    <img id="map_pointer" src="images/icons/map-marker.svg" alt="mape pointeur">
+                </div>
+                <input type="text" placeholder="ex: Paris, France">
                 <button>Rechercher</button>
             </div>
 
             <div id="filters">
-                <h2>Filtres</h2>
+                <h3>Filtres</h3>
                 <ul>
                     <li>
-                        <img src="" alt="">
-                        <p>Economique</p>
+                        <div class="filter_box">
+                            <div class="icon_circle">
+                                <img class="filter_icons" src="images/icons/money.svg" alt="icon argent">
+                            </div>
+                            <p class="filter_p fz_14">Économique</p>
+                        </div>
                     </li>
                     <li>
-                        <img src="" alt="">
-                        <p>Familial</p>
+                        <div class="filter_box">
+                            <div class="icon_circle">
+                                <img class="filter_icons" src="images/icons/child.svg" alt="icon personne">
+                            </div>
+                            <p class="filter_p fz_14">Familial</p>
+                        </div>
                     </li>
                     <li>
-                        <img src="" alt="">
-                        <p>Romantique</p>
+                        <div class="filter_box">
+                            <div class="icon_circle">
+                                <img class="filter_icons" src="images/icons/heart.svg" alt="icon coeur">
+                            </div>
+                            <p class="filter_p fz_14">Romantique</p>
+                        </div>
                     </li>
                     <li>
-                        <img src="" alt="">
-                        <p>Animaux autorisés</p>
+                        <div class="filter_box">
+                            <div class="icon_circle">
+                                <img class="filter_icons" src="images/icons/dog.svg" alt="icon chien">
+                            </div>
+                            <p class="filter_p fz_14">Animaux autorisés</p>
+                        </div>
                     </li>
                 </ul>
             </div>
 
             <div id="info">
-                <img src="" alt="">
+                <div id="info_circle">
+                    <img src="images/icons/info.svg" alt="icon info">
+                </div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
