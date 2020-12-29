@@ -27,9 +27,15 @@ p {
 
 .fz_14 {
     font-size: 14px;
-    font-weight: 700;
 }
 
+.bold900 {
+    font-weight: 900;
+}
+
+.bold700 {
+    font-weight: 700;
+}
 
 /* ---------------- */
 /* --- WRAPPER --- */
@@ -97,11 +103,6 @@ header a {
 /* ------------- */
 /* --- BODY --- */
 /* ----------- */
-
-h1 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-}
 
 /* --- Search Bar --- */
 #search_bar {
@@ -216,7 +217,101 @@ h3 {
     margin: 0 0px 40px 10px;
 }
 
+/* --- lodges --- */ 
+#lodges {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+}
 
+/* --- lodge_results --- */
+#lodge_results {
+    width: 60%;
+    padding: 40px;
+    border-radius: 4%;
+    background-color: #F2F2F2;
+}
+
+h2 {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#lodge_results_list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+#lodge_results_list ul li {
+    flex-basis: 30%;
+    height: 200px;
+    margin-bottom: 30px;
+    border-radius: 4%;
+    background-color: white;
+}
+
+#lodge_results_list ul li .lodge_results_img {
+    margin: 2%;
+    min-width: 95%;
+    height: 50%;
+    border-radius: 4%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#lodge_auberge_la_cannebiere {
+    background-image: url(../images/hebergements/4_small/auberge-la-cannebiere.jpg);
+}
+
+#lodge_hotel_du_port {
+    background-image: url(../images/hebergements/4_small/hotel-du-port.jpg);
+}
+
+#lodge_hotel_les_mouettes {
+    background-image: url(../images/hebergements/4_small/hotel-les-mouettes.jpg);
+}
+
+#lodge_hotel_de_la_mer {
+    background-image: url(../images/hebergements/4_small/hotel-de-la-mer.jpg);
+}
+
+#lodge_auberge_le_panier {
+    background-image: url(../images/hebergements/4_small/auberge-le-panier.jpg);
+}
+
+#lodge_hotel_chez_amina {
+    background-image: url(../images/hebergements/4_small/hotel-chez-amina.jpg);
+}
+
+.lodge_star_rank {
+    display: flex;
+}
+
+.blue_star {
+    width: 14px;
+    height: 14px;
+    background-image: url(../images/icons/star.svg);
+    background-repeat: no-repeat;
+    filter: invert(33%) sepia(79%) saturate(7024%) hue-rotate(212deg) brightness(102%) contrast(102%);
+}
+
+.grey_star {
+    width: 14px;
+    height: 14px;
+    background-image: url(../images/icons/star.svg);
+    background-repeat: no-repeat;
+    filter: invert(87%) sepia(2%) saturate(23%) hue-rotate(336deg) brightness(102%) contrast(90%);
+}
+
+
+/* --- lodge most popular --- */
+#lodge_most_popular {
+    width: 30%;
+    background-color: #F2F2F2;
+}
 
 /* --------------- */
 /* --- FOOTER --- */

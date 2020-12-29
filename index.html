@@ -55,7 +55,7 @@
                             <div class="icon_circle">
                                 <img class="filter_icons" src="images/icons/money.svg" alt="icon argent">
                             </div>
-                            <p class="filter_p fz_14">Économique</p>
+                            <p class="filter_p fz_14 bold700">Économique</p>
                         </div>
                     </li>
                     <li>
@@ -63,7 +63,7 @@
                             <div class="icon_circle">
                                 <img class="filter_icons" src="images/icons/child.svg" alt="icon personne">
                             </div>
-                            <p class="filter_p fz_14">Familial</p>
+                            <p class="filter_p fz_14 bold700">Familial</p>
                         </div>
                     </li>
                     <li>
@@ -71,7 +71,7 @@
                             <div class="icon_circle">
                                 <img class="filter_icons" src="images/icons/heart.svg" alt="icon coeur">
                             </div>
-                            <p class="filter_p fz_14">Romantique</p>
+                            <p class="filter_p fz_14 bold700">Romantique</p>
                         </div>
                     </li>
                     <li>
@@ -79,7 +79,7 @@
                             <div class="icon_circle">
                                 <img class="filter_icons" src="images/icons/dog.svg" alt="icon chien">
                             </div>
-                            <p class="filter_p fz_14">Animaux autorisés</p>
+                            <p class="filter_p fz_14 bold700">Animaux autorisés</p>
                         </div>
                     </li>
                 </ul>
@@ -94,81 +94,142 @@
         </section>
 
         <!-- section 2 hebergements -->
-        <section id="lodge_results">
-            <h2>Hébergements à Marseille</h2>
+        <section id="lodges">
+            <div id="lodge_results">
+                <h2>Hébergements à Marseille</h2>
 
-            <div>
-                <ul>
-                    <li>
-                        <img src="" alt="">
-                        <P>Auberge de Cannebière</P>
-                        <p>Nuit à partir de 25€</p>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <P>Hôtel du port</P>
-                        <p>Nuit à partir de 52€</p>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <P>Hôtel Les mouettes</P>
-                        <p>Nuit à partir de 76€</p>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <P>Hôtel de La mer</P>
-                        <p>Nuit à partir de 46€</p>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <P>Auberge Le Panier</P>
-                        <p>Nuit à partir de 23€</p>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <P>Hôtel chez Amina</P>
-                        <p>Nuit à partir de 96€</p>
-                        <img src="" alt="">
-                    </li>
-                </ul>
-                <p>Afficher plus</p>
+                <div id="lodge_results_list">
+                    <ul>
+                        <li>
+                            <div class="lodge_results_img" id="lodge_auberge_la_cannebiere">
+                            </div>
+                            <div class="lodge_description_padding">
+                                <P class="bold900">Auberge de Cannebière</P>
+                                <p>Nuit à partir de <span class="bold700">25€</span></p>
+                                <div class="lodge_star_rank">
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                    <div class="grey_star"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lodge_results_img" id="lodge_hotel_du_port">
+                                <img src="" alt="">
+                            </div>
+                            <div class="lodge_description_padding">
+                                <P class="bold900">Hôtel du port</P>
+                                <p>Nuit à partir de 52<span class="bold700">€</span></span></p>
+                                <div class="lodge_star_rank">
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lodge_results_img" id="lodge_hotel_les_mouettes">
+                                <img src="" alt="">
+                            </div>
+                            <div class="lodge_description_padding">
+                                <P class="bold900">Hôtel Les mouettes</P>
+                                <p>Nuit à partir de 76<span class="bold700">€</span></p>
+                                <div class="lodge_star_rank">
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                    <div class="grey_star"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lodge_results_img" id="lodge_hotel_de_la_mer">
+                                <img src="" alt="">
+                            </div>
+                            <div class="lodge_description_padding">
+                                <P class="bold900">Hôtel de La mer</P>
+                                <p>Nuit à partir de 46<span class="bold700">€</span></p>
+                                <div class="lodge_star_rank">
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                    <div class="grey_star"></div>
+                                    <div class="grey_star"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lodge_results_img" id="lodge_auberge_le_panier">
+                                <img src="" alt="">
+                            </div>
+                            <div class="lodge_description_padding">
+                                <P class="bold900">Auberge Le Panier</P>
+                                <p>Nuit à partir de <span class="bold700">23€</span></p>
+                                <div class="lodge_star_rank">
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                    <div class="grey_star"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lodge_results_img" id="lodge_hotel_chez_amina">
+                                <img src="" alt="">
+                            </div>
+                            <div class="lodge_description_padding">
+                                <P class="bold900">Hôtel chez Amina</P>
+                                <p>Nuit à partir de 96<span class="bold700">€</span></p>
+                                <div class="lodge_star_rank">
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                    <div class="blue_star"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="bold900">Afficher plus</p>
+                </div>
+            </div>
+
+            <!-- section 3 populaires -->
+            <div id="lodge_most_popular">
+                <h2>Les plus populaires</h2>
+                <img src="" alt="">
+
+                <div id="most_popular_results">
+                    <ul>
+                        <li>
+                            <img src="" alt="">
+                            <P>Hôtel Le soleil du matin</P>
+                            <p>Nuit à partir de 128€</p>
+                            <img src="" alt="">
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <P>Au coeur de l'eau Chambre d'hôtes</P>
+                            <p>Nuit à partir de 71€</p>
+                            <img src="" alt="">
+                        </li>
+                        <li>
+                            <img src="" alt="">
+                            <P>Hôtel Tout bleu et Blanc</P>
+                            <p>Nuit à partir de 68€</p>
+                            <img src="" alt="">
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
-
-        <!-- section 3 populaires -->
-        <section id="lodge_most_popular">
-            <h2>Les plus populaires</h2>
-            <img src="" alt="">
-
-            <div id="most_popular_results">
-                <ul>
-                    <li>
-                        <img src="" alt="">
-                        <P>Hôtel Le soleil du matin</P>
-                        <p>Nuit à partir de 128€</p>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <P>Au coeur de l'eau Chambre d'hôtes</P>
-                        <p>Nuit à partir de 71€</p>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                        <P>Hôtel Tout bleu et Blanc</P>
-                        <p>Nuit à partir de 68€</p>
-                        <img src="" alt="">
-                    </li>
-                </ul>
-            </div>
-        </section>
-
+        
         <!-- section 4 activities -->
         <section id="activities">
             <h2>Activités à Marseille</h2>
@@ -203,7 +264,6 @@
                 <p>Parc Longchamp</p>
             </div>
         </section>
-        </div>
 
     <!-- section 5 footer -->
     <footer>
