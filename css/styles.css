@@ -1,11 +1,12 @@
 * {
     text-decoration: none;
     /* font-size: 16px; */
+    box-sizing: border-box;
 }
 
 h1, h2, h3, p, a {
     font-family: 'Raleway', sans-serif;
-
+    color: black;
 }
 
 h1 {
@@ -21,7 +22,7 @@ h3 {
 }
 
 p {
-    line-height: 30px;
+    line-height: 20px;
     font-size: 12px;
 }
 
@@ -59,8 +60,6 @@ header {
 }
 
 #container_logo { 
-    /* background-image: url(../images/logo/Reservia.svg); */
-    /* background-size: 96px 30px; */
     width: 98px;
     height: auto;
     margin-top: 16px;
@@ -78,15 +77,15 @@ header ul{
 }
 
 header ul li {
-    padding-left: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 56px;
+    padding-bottom: 56px;
 }
 
 header a {
     width: 160px;
-    padding-top: 53px;
-    font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    color: black;
 }
 
 .mouse_hover:hover {
@@ -129,7 +128,7 @@ header a {
 
 input {
     width: 234px;
-    height: 48px;
+    height: 50px;
     padding: 0 18px 0 18px;
     border: 1px solid;
     border-color: #F2F2F2;
@@ -148,16 +147,22 @@ button {
     border-radius: 0 15px 15px 0;
 }
 
+
+
 /* --- Filters --- */
 h3 {
     font-weight: 700;
 }
 
+.filter_box {
+    display: flex;
+    height: 50px;
+}
+
 #filters {
     display: flex;
-    flex-direction: row;
-    align-items: center; 
-    margin: 30px 0 40px 0;   
+    align-items: center;
+    margin: 30px 0 40px 0;
 }
 
 #filters ul {
@@ -172,10 +177,15 @@ h3 {
 
 .filter_p {
     display: flex;
-    border: 1px solid  #F2F2F2;
-    border-radius: 50%/100%;
-    padding: 8px 8px 8px 50px;
-    margin-left: 10px;
+    height: 48px;
+    align-items: center;
+    border-top: 2px solid  #F2F2F2;
+    border-right: 2px solid  #F2F2F2;
+    border-bottom: 2px solid  #F2F2F2;
+    border-radius: 0 30px 30px 0px;
+    padding: 0px 15px 0px 40px;
+    margin-left: 18px;
+    margin-top: 1px;
 }
 
 .icon_circle {
@@ -186,6 +196,7 @@ h3 {
     height: 50px;
     background-color: #DEEBFF;
     border-radius: 100%;
+
 }
 
 .filter_icons {
@@ -193,6 +204,8 @@ h3 {
     /* CSS filter generator to convert from black to target hex color https://codepen.io/sosuke/pen/Pjoqqp*/
     filter: invert(33%) sepia(79%) saturate(7024%) hue-rotate(212deg) brightness(102%) contrast(102%);
 }
+
+
 
 /* --- info --- */
 #info {
@@ -217,6 +230,8 @@ h3 {
     margin: 0 0px 40px 10px;
 }
 
+
+
 /* --- lodges --- */ 
 #lodges {
     display: flex;
@@ -224,17 +239,18 @@ h3 {
     margin-bottom: 65px;
 }
 
+
+
 /* --- lodge_results --- */
 #lodge_results {
     width: 60%;
     padding: 40px;
-    border-radius: 4%;
+    border-radius: 20px;
     background-color: #F2F2F2;
 }
 
 h2 {
     font-weight: 700;
-    margin-bottom: 30px;
 }
 
 #lodge_results_list ul {
@@ -246,20 +262,22 @@ h2 {
 
 #lodge_results_list ul li {
     flex-basis: 30%;
-    height: 200px;
-    margin-bottom: 30px;
-    border-radius: 4%;
+    height: 210px;
+    margin: 30px 0;
+    border-radius: 20px;
     background-color: white;
+    box-shadow: 8px 9px 3px -2px #E3E3E3;
 }
 
 #lodge_results_list ul li .lodge_results_img {
     margin: 2%;
     min-width: 95%;
-    height: 50%;
-    border-radius: 4%;
+    height: 130px;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 #lodge_auberge_la_cannebiere {
@@ -288,6 +306,7 @@ h2 {
 
 .lodge_star_rank {
     display: flex;
+    margin-top: 4px;
 }
 
 .blue_star {
@@ -306,11 +325,169 @@ h2 {
     filter: invert(87%) sepia(2%) saturate(23%) hue-rotate(336deg) brightness(102%) contrast(90%);
 }
 
+.lodge_description_padding {
+    padding-left: 20px;
+}
+
+
 
 /* --- lodge most popular --- */
 #lodge_most_popular {
-    width: 30%;
+    width: 35%;
     background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.dsp_flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 40px 30px 40px;
+}
+
+#graph_icon {
+    width: 20px;
+    height: 20px;
+}
+
+.li_box {
+    margin: 0 40px 30px 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 8px 9px 3px -2px #E3E3E3;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+}
+
+.lodge_most_popular_img {
+    width: 30%;
+    height: 150px;
+    margin: 6px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#lodge_hotel_le_soleil_du_matin{
+    background-image: url(../images/hebergements/4_small/hotel-le-soleil-du-matin.jpg);
+    
+}
+
+#lodge_au_couer_de_leau {
+    background-image: url(../images/hebergements/4_small/au-coeur-de-leau.jpg);
+}
+
+#lodge_hotel_tout_bleu_et_blac {
+    background-image: url(../images/hebergements/4_small/hotel-tout-bleu-et-blanc.jpg);
+}
+
+.figcaption_most_popular {
+    height: 150px;
+    margin: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+/* --- Activities --- */
+.section_activities {
+    width: 100%;
+    height: 50vh;
+}
+
+.section_activities h2 {
+    margin-bottom: 20px;
+}
+
+#activities {
+    width: 100%;
+    height: 95%;
+    display: grid;    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 40px;
+    grid-template-areas: 
+        "img-1 img-2 img-4 img-5"
+        "img-1 img-3 img-4 img-6";
+}
+
+#activities figure {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 8px 9px 3px -2px #E3E3E3;
+}
+
+.act_figure_radius {
+    min-height: 81%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#activities figure i {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    min-width: 100%;
+}
+
+#activities figure figcaption {
+    align-self: flex-start;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.img-1 {
+    grid-area: img-1;
+}
+.img-2 {
+    /* min-height: 130%; */
+    grid-area: img-2;
+}
+.img-3 {
+    /* margin-top: 50px; */
+    grid-area: img-3;
+}
+.img-4 {
+    grid-area: img-4;
+}
+.img-5 {
+    grid-area: img-5;
+}
+.img-6 {
+    grid-area: img-6;
+}
+
+#activities_vieux_port{
+    min-height: 91%;
+    background-image: url(../images/activites/3_medium/vieux-port.jpg);
+}
+
+#activities_fort_de_pomegues {
+    background-image: url(../images/activites/3_medium/fort-de-pomegues.jpg);
+}
+
+#activities_iles_du_frioul {
+    /* min-height: 78%; */
+    background-image: url(../images/activites/3_medium/iles-du-frioul.jpg);
+}
+
+#activities_parc_national_des_calanques {
+    min-height: 91%;
+    background-image: url(../images/activites/3_medium/parc-national-des-calanques.jpg);
+}
+
+#activities_notre_dame_de_la_garde {
+    background-image: url(../images/activites/3_medium/notre-dame-de-la-garde.jpg);
+}
+
+#activities_parc_longchamp {
+    background-image: url(../images/activites/3_medium/parc-longchamp.jpg);
 }
 
 /* --------------- */
@@ -318,5 +495,17 @@ h2 {
 /* ------------- */
 
 footer {
+    margin-top: 60px;
+    min-height: 220px;
     background-color: #F2F2F2;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    line-height: 30px;
+}
+
+footer div {
+    margin: 50px 0  0 50px;
+    width: 50%;
+    justify-content: space-between;
 }
