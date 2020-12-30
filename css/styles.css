@@ -5,7 +5,7 @@
 
 h1, h2, h3, p, a {
     font-family: 'Raleway', sans-serif;
-
+    color: black;
 }
 
 h1 {
@@ -21,7 +21,7 @@ h3 {
 }
 
 p {
-    line-height: 30px;
+    line-height: 20px;
     font-size: 12px;
 }
 
@@ -59,8 +59,6 @@ header {
 }
 
 #container_logo { 
-    /* background-image: url(../images/logo/Reservia.svg); */
-    /* background-size: 96px 30px; */
     width: 98px;
     height: auto;
     margin-top: 16px;
@@ -86,7 +84,6 @@ header a {
     padding-top: 53px;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    color: black;
 }
 
 .mouse_hover:hover {
@@ -148,9 +145,15 @@ button {
     border-radius: 0 15px 15px 0;
 }
 
+
+
 /* --- Filters --- */
 h3 {
     font-weight: 700;
+}
+
+.filter_box {
+    height: 50px;
 }
 
 #filters {
@@ -176,6 +179,8 @@ h3 {
     border-radius: 50%/100%;
     padding: 8px 8px 8px 50px;
     margin-left: 10px;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .icon_circle {
@@ -193,6 +198,8 @@ h3 {
     /* CSS filter generator to convert from black to target hex color https://codepen.io/sosuke/pen/Pjoqqp*/
     filter: invert(33%) sepia(79%) saturate(7024%) hue-rotate(212deg) brightness(102%) contrast(102%);
 }
+
+
 
 /* --- info --- */
 #info {
@@ -217,6 +224,8 @@ h3 {
     margin: 0 0px 40px 10px;
 }
 
+
+
 /* --- lodges --- */ 
 #lodges {
     display: flex;
@@ -224,17 +233,18 @@ h3 {
     margin-bottom: 65px;
 }
 
+
+
 /* --- lodge_results --- */
 #lodge_results {
     width: 60%;
     padding: 40px;
-    border-radius: 4%;
+    border-radius: 20px;
     background-color: #F2F2F2;
 }
 
 h2 {
     font-weight: 700;
-    margin-bottom: 30px;
 }
 
 #lodge_results_list ul {
@@ -246,20 +256,22 @@ h2 {
 
 #lodge_results_list ul li {
     flex-basis: 30%;
-    height: 200px;
-    margin-bottom: 30px;
-    border-radius: 4%;
+    height: 210px;
+    margin: 30px 0;
+    border-radius: 20px;
     background-color: white;
+    box-shadow: 8px 9px 3px -2px #E3E3E3;
 }
 
 #lodge_results_list ul li .lodge_results_img {
     margin: 2%;
     min-width: 95%;
-    height: 50%;
-    border-radius: 4%;
+    height: 130px;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 #lodge_auberge_la_cannebiere {
@@ -288,6 +300,7 @@ h2 {
 
 .lodge_star_rank {
     display: flex;
+    margin-top: 4px;
 }
 
 .blue_star {
@@ -306,13 +319,142 @@ h2 {
     filter: invert(87%) sepia(2%) saturate(23%) hue-rotate(336deg) brightness(102%) contrast(90%);
 }
 
+.lodge_description_padding {
+    padding-left: 20px;
+}
+
+
 
 /* --- lodge most popular --- */
 #lodge_most_popular {
     width: 30%;
     background-color: #F2F2F2;
+    border-radius: 20px;
 }
 
+.dsp_flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 40px 30px 40px;
+}
+
+#graph_icon {
+    width: 20px;
+    height: 20px;
+}
+
+.li_box {
+    margin: 0 40px 30px 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 8px 9px 3px -2px #E3E3E3;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+}
+
+.lodge_most_popular_img {
+    width: 30%;
+    height: 150px;
+    margin: 6px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#lodge_hotel_le_soleil_du_matin{
+    background-image: url(../images/hebergements/4_small/hotel-le-soleil-du-matin.jpg);
+    
+}
+
+#lodge_au_couer_de_leau {
+    background-image: url(../images/hebergements/4_small/au-coeur-de-leau.jpg);
+}
+
+#lodge_hotel_tout_bleu_et_blac {
+    background-image: url(../images/hebergements/4_small/hotel-tout-bleu-et-blanc.jpg);
+}
+
+.figcaption_most_popular {
+    height: 150px;
+    margin: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+/* --- Activities --- */
+#activities {
+    height: 450xp;
+    display: grid;
+    grid-template-columns: repeat(auto-fit), minmax(300px, 1fr);
+    /* grid-template-columns: 300px 46px 300px 46px 300px 46px 300px; */
+    grid-template-rows: 393px 143px 44px 55px 40px 113px 70px;
+
+}
+
+#activities_vieux_port {
+    grid-row: 1/7;
+    background-image: url(../images/activites/3_medium/vieux-port.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#activities_fort_de_pomegues {
+    grid-row: 1/3;
+    grid-column: 3/4;
+    background-image: url(../images/activites/3_medium/fort-de-pomegues.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#activities_iles_du_frioul {
+    grid-row: 6/7;
+    grid-column: 3/4;
+    background-image: url(../images/activites/3_medium/iles-du-frioul.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#activities_parc_national_des_calanques {
+    grid-row: 1/7;
+    grid-column: 5/6;
+    background-image: url(../images/activites/3_medium/parc-national-des-calanques.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#activities_notre_dame_de_la_garde {
+    grid-row: 1/2;
+    grid-column: 7/8;
+    background-image: url(../images/activites/3_medium/notre-dame-de-la-garde.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#activities_parc_longchamp {
+    grid-row: 4/7;
+    grid-column: 7/8;
+    background-image: url(../images/activites/3_medium/parc-longchamp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.act_figure_radius {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 /* --------------- */
 /* --- FOOTER --- */
 /* ------------- */
