@@ -696,10 +696,33 @@ footer div {
   #lodge_results {
     background-color: white;
   }
+}
 
-  /* #lodge_results_list ul li {
-    flex-basis: 60%;
-    min-width: 90%;
+@media screen and (max-width: 500px) {
+  #lodge_results {
+    width: 100%;
+    padding: 0;
+  }
+
+  #lodge_results h2 {
+    margin-left: 20px;
+  }
+
+  #lodge_results_list ul li {
+    flex-basis: 90%;
+    margin-bottom: 0px;
     margin-top: 20px;
   }
-} */
+
+  #lodge_results_list ul:first-child {
+    margin-top: 10px;
+  }
+
+  #lodge_results_list ul li:last-child {
+    margin-bottom: 40px;
+  }
+
+  .lodge_results_show_more {
+    margin-left: 20px;
+  }
+}
