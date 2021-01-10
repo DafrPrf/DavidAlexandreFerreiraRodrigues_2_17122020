@@ -71,7 +71,7 @@ header {
 
 .link_nav:hover {
   color: var(--darkBlue);
-  border-bottom: 0.3rem solid var(--darkBlue);
+  border-bottom: 0.3rem solid var(--ligthBlue);
 }
 
 .btn_subscribe {
@@ -194,6 +194,7 @@ input::placeholder {
   align-items: center;
   justify-content: center;
   margin-right: -2rem;
+  color: var(--darkBlue);
 }
 
 .filter_p {
