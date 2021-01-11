@@ -198,6 +198,12 @@ input::placeholder {
   margin-left: 1rem;
 }
 
+.filter_box:hover {
+  position: relative;
+  top: 0.2rem;
+  box-shadow: 0.8rem 0.9rem 0.3rem -0.2rem #e4e4e4;
+}
+
 .icon_circle {
   position: relative;
   left: -0.1rem;
